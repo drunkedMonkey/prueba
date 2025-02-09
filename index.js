@@ -6,7 +6,7 @@ app.use(morgan('tiny'))
 const persons = [
   {
     id: 1,
-    name: "Arto Hellas",
+    name: "Pepito piscinas",
     number: "040-123456",
   },
   {
@@ -65,8 +65,7 @@ app.post('/api/persons',(req, res)=>{
 
 
 
-const PORT = 3001;
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 3001, () => {
   console.log("server is running");
 });
